@@ -3,101 +3,111 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>From Test | Techit</title>
+    <title>Form Test | Techit</title>
     <link rel="preload" as="style" href="./../assets/font/notoserif/notoserif.css" />
     <link rel="stylesheet" href="./../assets/font/notoserif/notoserif.css" />
     <link rel="preload" as="style" href="./../assets/font/pretendard/pretendardvariable-dynamic-subset.css" />
     <link rel="stylesheet" href="./../assets/font/pretendard/pretendardvariable-dynamic-subset.css" />
-    <link rel="stylesheet" href="./css/reset/reset.css" />
     <style>
       body {
         font-family: "Pretendard Variable", Pretendard, sans-serif;
       }
-      .form {
-        width: 1000px;
-        margin: 100px auto;
-      }
       h1 {
-        text-align: center;
-        margin-block-start: 100px;
+        margin-block-start: 50px;
+      }
+      li {
+        margin: 20px;
       }
     </style>
   </head>
   <body>
     <h1>Form Test Mobile</h1>
     <form action="" get="post" class="form">
-      <div>
-        <label for="text">한줄입력상자</label>
-        <input id="text" type="text" />
-      </div>
-      <br />
-      <div>
-        <label for="password">암호화텍스트</label>
-        <input id="password" type="password" />
-      </div>
-      <br />
-      <div>
-        <label for="radio">라디오버튼</label>
-        <input id="radio" type="radio" />
-      </div>
-      <br />
-      <div>
-        <label for="checkbox">체크상자</label>
-        <input id="checkbox" type="checkbox" />
-      </div>
-      <br />
-      <div>
-        <label for="file">첨부파일</label>
-        <input id="file" type="file" />
-      </div>
-      <br />
-      <div>
-        <label for="url"> url전용 한줄입력상자</label>
-        <input id="url" type="url" />
-      </div>
-      <br />
-      <div>
-        <label for="email"> email전용 한줄입력상자</label>
-        <input id="email" type="email" />
-      </div>
-      <br />
-      <div>
-        <label for="number">숫자전용 한줄입력상자</label>
-        <input id="number" type="number" />
-      </div>
-      <br />
-      <div>
-        <label for="search">검색전용 한줄입력상자</label>
-        <input id="search" type="search" />
-      </div>
-      <br />
-      <div>
-        <label for="tel">전화번호전용 한줄입력상자</label>
-        <input id="tel" type="tel" />
-      </div>
-      <br />
-      <textarea cols="30" rows="10"></textarea>여러줄 입력상자
-      <br />
-      <div>
-        <label for=""></label>
-        <input id="" type="range" step="2" max="10" />
-      </div>
-      <br />
-      <div>
-        <label for="">색상</label>
-        <input id="" type="color" />
-      </div>
-      <br />
-      <progress max="100" value="80">80%</progress>
-      <br />
-      <br />
-      <button id="" type="submit">전송버튼</button>
-      <br />
-      <br />
-      <button id="" type="reset">취소/초기화 버튼</button>
-      <br />
-      <br />
-      <button id="" type="button">범용버튼</button>
+      <fieldset>
+        <legend>온라인서식의 제목</legend>
+        <ul>
+          <li>
+            <label for="text">한줄입력상자</label>
+            <input id="text" type="text" />
+          </li>
+          <li>
+            <label for="password">암호화텍스트</label>
+            <input id="password" type="password" />
+          </li>
+          <li>
+            <label for="radio1">선택1</label>
+            <input id="radio1" type="radio" />
+            <label for="radio2">선택2</label>
+            <input id="radio2" type="radio" />
+            <label for="radi3">선택3</label>
+            <input id="radio3" type="radio" />
+            <label for="radio4">선택4</label>
+            <input id="radio4" type="radio" />
+          </li>
+          <li>
+            <label for="ckb1">선택1</label>
+            <input id="ckb1" type="checkbox" />
+            <label for="ckb2">선택2</label>
+            <input id="ckb2" type="checkbox" />
+            <label for="ckb3">선택3</label>
+            <input id="ckb3" type="checkbox" />
+            <label for="ckb4">선택4</label>
+            <input id="ckb4" type="checkbox" />
+          </li>
+          <li>
+            <label for="file">첨부파일</label>
+            <input id="file" type="file" />
+          </li>
+          <li>
+            <label for="url"> url전용 한줄입력상자</label>
+            <input id="url" type="url" />
+          </li>
+          <li>
+            <label for="email"> email전용 한줄입력상자</label>
+            <input id="email" type="email" />
+          </li>
+          <li>
+            <label for="number">숫자전용 한줄입력상자</label>
+            <input id="number" type="number" />
+          </li>
+          <li>
+            <label for="search">검색전용 한줄입력상자</label>
+            <input id="search" type="search" />
+          </li>
+          <li>
+            <label for="tel">전화번호전용 한줄입력상자</label>
+            <input id="tel" type="tel" />
+          </li>
+          <li><textarea cols="30" rows="10"></textarea>여러줄 입력상자</li>
+          <li>
+            <input id="" type="range" step="2" max="10" />
+            <span>작업 범위</span>
+          </li>
+          <li>
+            <select>
+              <option>선택하세요1</option>
+              <option>선택하세요2</option>
+              <option>선택하세요3</option>
+            </select>
+          </li>
+          <li>
+            <input id="" type="color" />
+            <span>색상 선택</span>
+          </li>
+          <li>
+            <progress max="100" value="80">80%</progress>
+          </li>
+          <li>
+            <button id="" type="submit">전송버튼</button>
+          </li>
+          <li>
+            <button id="" type="reset">취소/초기화 버튼</button>
+          </li>
+          <li>
+            <button id="" type="button">범용버튼</button>
+          </li>
+        </ul>
+      </fieldset>
     </form>
   </body>
 </html>
